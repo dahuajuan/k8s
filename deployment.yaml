@@ -15,9 +15,9 @@ spec:
       containers:
       - name: test1-ubuntu
         image: dahuajuan/ubuntu-with-test1
-		command: ["/bin/bash","-c","--"]
+        command: ["/bin/bash","-c","--"]
         args: ["while true; do sleep 30; done;"]
-		resources:
+        resources:
           requests:
             memory: "500Mi"
           limits:
