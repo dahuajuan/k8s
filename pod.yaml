@@ -4,10 +4,10 @@ metadata:
   name: test1
 spec:
   containers:
-  - name: dahuajuan/ubuntu-with-test1
+  - name: test1-ubuntu
     command: ["/bin/bash","-c","--"]
     args: ["while true; do sleep 30; done;"]
-    image: ubuntu
+    image: dahuajuan/ubuntu-with-test1
     resources:
       requests:
         memory: "500Mi"
